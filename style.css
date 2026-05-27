@@ -1,0 +1,129 @@
+:root{
+  --rb-blue:#06142c;
+  --rb-dark:#020b18;
+  --rb-red:#e10600;
+  --rb-yellow:#ffcc00;
+  --rb-light:#dfe7f2;
+}
+
+body{
+  background: linear-gradient(to bottom, var(--rb-dark), var(--rb-blue));
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+  background-color: rgba(0,0,0,0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid var(--rb-red);
+}
+
+.navbar-brand{
+  font-weight: bold;
+  color: var(--rb-yellow) !important;
+  letter-spacing: 1px;
+}
+
+.nav-link{
+  color: white !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover{
+  color: var(--rb-yellow) !important;
+}
+
+/* HERO */
+.hero{
+  padding: 70px 20px;
+}
+
+.main-card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-left: 6px solid var(--rb-red);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.race-badge{
+  background: var(--rb-yellow);
+  color: black;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* LAP BOX */
+.lap-box{
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.lap-box:hover{
+  transform: translateY(-5px);
+  border: 1px solid var(--rb-yellow);
+}
+
+.lap-time{
+  font-size: 1.8rem;
+  color: var(--rb-yellow);
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn-rb{
+  background: var(--rb-red);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-rb:hover{
+  background: var(--rb-yellow);
+  color: black;
+}
+
+/* MODAL */
+.modal-content{
+  background: var(--rb-blue);
+  color: white;
+  border: 2px solid var(--rb-yellow);
+}
+
+/* FORM */
+.form-control{
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+.form-control:focus{
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-color: var(--rb-yellow);
+  box-shadow: none;
+}
+
+.form-control::placeholder{
+  color: #cfcfcf;
+}
+
+.invalid-feedback{
+  color: #ff7070;
+}
+
+/* FOOTER */
+footer{
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+}
